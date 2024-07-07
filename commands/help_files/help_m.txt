@@ -1,0 +1,4 @@
+Comando: help
+Descripcion: Brinda ayuda, sinceramente no se que mas poner
+Uso: help [opcion] <comando>
+Opciones: -d, -m, -s

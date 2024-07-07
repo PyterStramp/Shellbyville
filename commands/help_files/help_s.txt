@@ -1,0 +1,1 @@
+help [-d|-m|-s] [comando]

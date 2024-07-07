@@ -1,9 +1,11 @@
 import os
 import colorama
 from colorama import Fore, Style
+
 from commands.cd import change_directory
 from commands.ls import list_directory
 from commands.echo import print_message
+from commands.help import execute_help
 
 colorama.init()
 
@@ -34,7 +36,11 @@ def execute_command(command, current_path, base_path):
                     return new_path  # devolver el nuevo directorio
             else:
                 print("Se requiere una dirección antes de cambiar directorio")
-                
+
+        elif parts[0] == 'help':
+            help_output = execute_help(parts[1:])
+            print(help_output)
+
         elif parts[0] == 'ls':
             list_directory()
         elif parts[0] == 'echo':

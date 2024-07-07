@@ -1,0 +1,4 @@
+Comando: cd
+Descripcion: Cambia el directorio actual al especificado.
+Uso: cd [opcion] [directorio]
+Opciones: -L (logico), -P (fisico)
